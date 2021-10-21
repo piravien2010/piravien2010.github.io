@@ -1,0 +1,67 @@
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+tr.colored td {
+	background: #fafad2;
+}
+
+tr.mouseon td {
+	background: #1e90ff;
+}
+
+div.field{
+	background-color: #EFCF8B;
+	width: 300px; 
+	height:300px;
+}
+
+img {
+	border-color: green;
+	border-width: 5px;
+	border-style: solid;
+}
+
+
+
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index:-100; 
+	position: fixed;
+  }
+  
+  .test {
+	  color: red;
+	  font-size: x-large;
+  }
+  /* Add some content at the bottom of the video/page */
+  .content {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  #myBtn:hover {
+	background: #ddd;
+	color: black;
+  }
