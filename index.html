@@ -1,115 +1,189 @@
-﻿<!DOCTYPE html>
-<html lang="de">
+
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="image/favicon.ico">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>LA 7710</title>
+    <title>Ily Bily</title>
 
-    <!-- Bootstrap-CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
-    <!-- Besondere Stile für diese Vorlage -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-	<!-- Eigenes CSS -->
-	<link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
 
-    <!-- Nur für Testzwecke. Kopiere diese Zeilen nicht in echte Projekte! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
   </head>
-
   <body>
 
-    <!-- Fixierte Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Navigation ein-/ausblenden</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://moodle.bbbaden.ch/course/view.php?id=881">jQuery</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">LA 7710</a></li>
-            <li><a href="hallo.html">LA 7711</a></li>
-            <li><a href="la7712.html">LA 7712</a></li>
-            <li><a href="la7713.html">LA 7713</a></li>
-            <li><a href="LA7714.html">LA 7714</a></li>
-            <li><a href="la7715.html">LA 7715</a></li>
-              <li><a href="la7716.html">LA 7716</a></li>
-              <li><a href="bild.html">LA 7752</a></li>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">Ilaria Catone</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Röngten <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="praktisch.html">Praktisch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Theoretisch</a>
+            </li>
           </ul>
-        </div><!--/.nav-collapse -->
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center">
+                <picture>
+                    <!-- Bild für iPhone 15 und andere Handys -->
+                    <source srcset="IMG_2341.jpg" media="(max-width: 430px)">
+                    <!-- Standardbild für größere Bildschirme -->
+                    <img class="img-fluid rounded" src="IMG_2341.jpg" alt="First slide">
+                </picture>
+            </div>
+            
+          </div>
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Han dich ganz dich ganz fest lieb</h1>
+                <p></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Pupsie</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+            <picture>
+              <!-- Bild für iPhone 15 und andere Handys -->
+              <source srcset="IMG_0812.JPG" media="(max-width: 430px)">
+              <!-- Standardbild für größere Bildschirme -->
+              <img class="img-fluid rounded" src="IMG_0812.JPG" alt="First slide">
+          </picture>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Du bisch wunderschön!!!</h1>
+                <p></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Engel</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <!-- Bild für iPhone 15 und andere Handys -->
+              <source srcset="IMG_2722.JPG" media="(max-width: 430px)">
+              <!-- Standardbild für größere Bildschirme -->
+              <img class="img-fluid rounded" src="IMG_2907.jpg" alt="First slide">
+          </picture>
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>du erreichsch alles min Engel!!!!!</h1>
+                <p></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Traumfrau</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </nav>
-
-    <!-- Seiteninhalt -->
-    <div class="container">
-      <div class="page-header">
-        <h1>LA 7710</h1>
-      </div>
-      <p class="lead">Was ist jquery</p>
-      <p>jQuery ist eine JavaScript-Bibliothek, die Webentwicklern die Arbeit mit JavaScript erleichtern soll. <br>
-        Sie überbrückt technische Unterschiede zwischen verschiedenen Browsern und ermöglicht komfortablen und kompakten Code, <br>
-        der im direkten Vergleich zu JavaScript häufig sehr viel kürzer ist. <br>
-        
-        <a href="https://www.dev-insider.de/was-ist-jquery-a-782237/">QUELLE: DEV-INSIDER</a>
-      </p>
-    </div>
-    <br>
-    <br>
-    <video src="WerbeVideo.mov" width="320" height="240" 
-   poster="stayHydrated.jpeg" autobuffer autoplay controls>
-
-<div>Schade – hier käme ein Video, wenn Ihr 
-Browser HTML5 Unterstützung hätte, wie z.B. der 
-aktuelle Firefox</div>
-
-</video>
-<br>
-<br>
-<a href="https://www.html-seminar.de/html-5-video.htm">QUELLE: HTML_Seminar</a>
-<br>
-<br> 
-<div>
-  <video autoplay muted loop id="myVideo">
-      <source src="img/matrix.mov" type="matrix/mov">
-  </video>
-</div>
-
-<br>
-<br>  <br>
-<br>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">&copy; Piravien Suntharalingam</p>
-      </div>
-    </footer>
 
 
-    <!-- Bootstrap-JavaScript
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="IMG_3028.JPG" alt="Generic placeholder image" width="140" height="140">
+            <h2>das isch piravien</h2>
+            <p>zum dich motiviere</p>
+            <p><a class="btn btn-secondary" href="https://m.youtube.com/watch?v=y3NB1L6jECw" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="IMG_2901.PNG" alt="Generic placeholder image" width="140" height="140">
+            <h2>17.08.2024</h2>
+            <p>wenn müed bisch !!!!</p>
+            <p><a class="btn btn-secondary" href="https://youtu.be/as8Q3c2FUq0" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>in Arbeit</h2>
+            <p>zuekunftsplan</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Warum du Ilaria?<span class="text-muted"></br>alles voll ernst gemeint</span></h2>
+            <p class="lead">Ich danke dir für alles, du bisch für mich de wundervollste mensch i mim lebe. Ich han richtig gmerkt wie mir eus no nöcher cho sind, ich spür so viel Emotione. Dini Umarmige eifach 10000/10, wenn min tag voll schlecht gsie isch, machsch du de wieder unvergesslich. wenn ich dir tüf i dini auge luege, bechomi kei luft wow. Ich liebe dich über alles!!!
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="IMG_3447.JPG" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="holder.min.js"></script>
   </body>
 </html>
